@@ -4,17 +4,17 @@ Ejemplo sencillo de programa RPC para Linux, donde el cliente pide al servidor q
 
 Para poder crear programas que hagan uso de RPC es necesario contar con software que cree el archivo IDL.
 
-Instalación de software:
+## Instalación de software:
 + sudo apt-get install rpcbind
 
 Verificación de instalación:
 + rpcinfo
 
-Archivo IDL 
+## Archivo IDL 
 
-```javascript
+```c
 
-struct valores{
+struct values{
   float num1;
   float num2;
   char operation;
@@ -24,10 +24,10 @@ struct valores{
 
 program CALCULADORA{
   version CALCULADORA_VERS{
-  float ADD(valores)=1;
-  float SUB(valores)=2;
-  float MUL(valores)=3;
-  float DIV(valores)=4;
+  float ADD(values)=1;
+  float SUB(values)=2;
+  float MUL(values)=3;
+  float DIV(values)=4;
   } = 6; 
 } = 456123789;
 ```
@@ -49,7 +49,28 @@ Al compilarse con rpcgen se crean varios archivos a partir del archivo IDL:
 6. Rutinas XDR utilizadas tanto por el cliente como por el servidor
 7. Archivo Makefile
 
-Comando de compilación:
+## Comando de compilación:
 ```
 	rpcgen -a -C IDL.x
+```
+
+### Compilar todos los archivos
+
+Ahora compilar todos los archivos generados, incluyendo los programas cliente y servidor que fueron editados previamente.  
+No editar ningún otro archivo generado por el compilador rpcgen.
+
+Comando para compilar:
+```
+	make -f Makefile.IDL
+```
+
+## Ejecutar el servidor y el cliente
+
+Ahora se puede ejecutar el servidor en una ventana de terminal usando el comando.
+```	
+	sudo ./IDL_server
+```	
+Ahora se puede ejecutar el cliente en otra ventana de terminal usando el comando.
+```	
+	sudo ./IDL_client localhost
 ```
