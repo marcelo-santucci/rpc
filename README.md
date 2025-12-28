@@ -14,7 +14,7 @@ Archivo IDL
 
 ```javascript
 
-struct values{
+struct valores{
   float num1;
   float num2;
   char operation;
@@ -24,18 +24,18 @@ struct values{
 
 program CALCULADORA{
   version CALCULADORA_VERS{
-  float ADD(values)=1;
-  float SUB(values)=2;
-  float MUL(values)=3;
-  float DIV(values)=4;
+  float ADD(valores)=1;
+  float SUB(valores)=2;
+  float MUL(valores)=3;
+  float DIV(valores)=4;
   } = 6; 
 } = 456123789;
 ```
 
 
-  values -> Este es el nombre de la estructura de datos que envía los parámetros del cálculo al servidor.
-	COMPUTE -> Este es el nombre del programa.
-	COMPUTE_VERS -> Este es el nombre de la versión del programa.
-	ADD(values) -> Este es uno de los métodos que vamos a llamar remotamente. La estructura de datos que contiene los dos operandos y la operación a realizar se proporciona como parámetro del método remoto. Esto es similar para los demás métodos que se proporcionan aquí.
+  valores -> Este es el nombre de la estructura de datos que envía los parámetros del cálculo al servidor.
+  CALCULADORA -> Este es el nombre del programa.
+  CALCULADORA_VERS -> Este es el nombre de la versión del programa.
+  ADD(valores) -> Este es uno de los métodos que vamos a llamar remotamente. La estructura de datos que contiene los dos operandos y la operación a realizar se proporciona como parámetro del método remoto. Esto es similar para los demás métodos.
 		
 		Se puede ver que al final de cada método, programa y versión, se asignan números. Estos números se utilizan para identificar de forma única cada entidad. Se puede asignar el número que se desee.
