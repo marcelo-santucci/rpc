@@ -36,6 +36,6 @@ program CALCULADORA{
   + valores -> Este es el nombre de la estructura de datos que envía los parámetros del cálculo al servidor.
   + CALCULADORA -> Este es el nombre del programa.
   + CALCULADORA_VERS -> Este es el nombre de la versión del programa.
-  + ADD(valores) -> Este es uno de los métodos que vamos a llamar remotamente. La estructura de datos que contiene los dos operandos y la operación a realizar se proporciona como parámetro del método remoto. Esto es similar para los demás métodos.
+  + ADD(valores) -> Este es uno de los métodos que vamos a llamar remotamente. La estructura de datos que contiene los dos operandos y la operación a realizar se proporciona como parámetro del método remoto. Similar para el resto de los métodos.
 		
 Se puede ver que al final de cada método, programa y versión, se asignan números. Estos números se utilizan para identificar de forma única cada entidad. Se puede asignar el número que se desee.
