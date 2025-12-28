@@ -2,6 +2,8 @@
 
 Ejemplo sencillo de programa RPC para Linux, donde el cliente pide al servidor que ejecute operaciones aritméticas de suma, resta, multiplicación y división.
 
+*Cuando clone el repositorio renombre los archivos IDL_client.c e IDL_server.c agregandoles "bk".
+
 Para poder crear programas que hagan uso de RPC es necesario contar con software que cree el archivo IDL.
 
 ## Instalación de software:
