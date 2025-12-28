@@ -56,12 +56,12 @@ Al compilarse con rpcgen se crean varios archivos a partir del archivo IDL:
 6. Rutinas XDR utilizadas tanto por el cliente como por el servidor
 7. Archivo Makefile
 
-## Comando de compilación:
+#### Comando de compilación:
 ```
 	rpcgen -a -C IDL.x
 ```
 
-### Compilar todos los archivos
+## Compilación para generar ejecutables
 
 Ahora compilar todos los archivos generados, incluyendo los programas cliente y servidor que fueron editados previamente.  
 No editar ningún otro archivo generado por el compilador rpcgen.
