@@ -37,5 +37,19 @@ program CALCULADORA{
   + CALCULADORA -> Este es el nombre del programa.
   + CALCULADORA_VERS -> Este es el nombre de la versión del programa.
   + ADD(valores) -> Este es uno de los métodos que vamos a llamar remotamente. La estructura de datos que contiene los dos operandos y la operación a realizar se proporciona como parámetro del método remoto. Similar para el resto de los métodos.
-		
-Se puede ver que al final de cada método, programa y versión, se asignan números. Estos números se utilizan para identificar de forma única cada entidad. Se puede asignar el número que se desee.
+  + Se puede ver que al final de cada método, programa y versión, se asignan números. Estos números se utilizan para identificar de forma única cada entidad. Se puede asignar el número que se desee.
+
+Al compilarse con rpcgen se crean varios archivos a partir del archivo IDL:
+
+1. Stub del cliente
+2. Skeleton del servidor
+3. Programa cliente de ejemplo
+4. Programa servidor de ejemplo
+5. Archivo de encabezado
+6. Rutinas XDR utilizadas tanto por el cliente como por el servidor
+7. Archivo Makefile
+
+Comando de compilación:
+```
+	rpcgen -a -C IDL.x
+```
