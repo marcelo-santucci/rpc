@@ -12,7 +12,7 @@ Verificación de instalación:
 
 ## Archivo IDL 
 
-Para poder crear programas que hagan uso de RPC es necesario contar con software que cree elementos a partir del archivo IDL.
+Para poder crear programas que hagan uso de RPC es necesario contar con software que cree elementos a partir del archivo IDL.x.
 
 ```c
 
