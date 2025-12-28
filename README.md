@@ -4,8 +4,6 @@ Ejemplo sencillo de programa RPC para Linux, donde el cliente pide al servidor q
 
 *Cuando clone el repositorio renombre los archivos IDL_client.c e IDL_server.c agregandoles "bk".
 
-Para poder crear programas que hagan uso de RPC es necesario contar con software que cree el archivo IDL.
-
 ## Instalación de software:
 + sudo apt-get install rpcbind
 
@@ -13,6 +11,8 @@ Verificación de instalación:
 + rpcinfo
 
 ## Archivo IDL 
+
+Para poder crear programas que hagan uso de RPC es necesario contar con software que cree elementos a partir del archivo IDL.
 
 ```c
 
@@ -35,7 +35,7 @@ program CALCULADORA{
 ```
 
 
-  + valores -> Este es el nombre de la estructura de datos que envía los parámetros del cálculo al servidor.
+  + values -> Este es el nombre de la estructura de datos que envía los parámetros del cálculo al servidor.
   + CALCULADORA -> Este es el nombre del programa.
   + CALCULADORA_VERS -> Este es el nombre de la versión del programa.
   + ADD(valores) -> Este es uno de los métodos que vamos a llamar remotamente. La estructura de datos que contiene los dos operandos y la operación a realizar se proporciona como parámetro del método remoto. Similar para el resto de los métodos.
