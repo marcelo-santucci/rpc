@@ -8,9 +8,9 @@ struct valores{
 
 program CALCULADORA{
     version CALCULADORA_VERS{
-        float ADD(values)=1;
-        float SUB(values)=2;
-	    float MUL(values)=3;
-	    float DIV(values)=4;
+        float ADD(valores)=1;
+        float SUB(valores)=2;
+	    float MUL(valores)=3;
+	    float DIV(valores)=4;
     } = 6;
 } = 456123789;
