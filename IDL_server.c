@@ -1,7 +1,7 @@
 /*
  * Codigo generado originalmente por rpcgen como plantilla de guía para uso en desarrollo 
  * 
- * El código fue enriquecido para hacer un "servidor" efectua una operación aritmética sobre dos números
+ * El código fue editado para hacer un "servidor" efectua una operación aritmética sobre dos números
  * conforme al caracter de operación.
  * 
  */
