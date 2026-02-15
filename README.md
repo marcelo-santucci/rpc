@@ -18,7 +18,7 @@ A continuación se aprecia el contenido del IDL del ejemplo:
 
 ```c
 
-struct values{
+struct valores{
   float num1;
   float num2;
   char operation;
