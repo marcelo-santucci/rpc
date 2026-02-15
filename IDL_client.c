@@ -1,8 +1,12 @@
 /*
  * Codigo generado originalmente por rpcgen como plantilla de guía para uso en desarrollo 
  * 
- * El código fue enriquecido para hacer un "cliente" simple que lea dos números y un caracter de operación
+ * El código fue editado para hacer un "cliente" simple que lea dos números y un caracter de operación
  * para ser enviados hacia un servidor rpc que realice la operación aritmética correspondiente.
+ * 
+ * Al ejecutar este programa se le pedirá que ingrese un primer número y presione enter
+ * luego un segundo número y presione enter 
+ * por ultimo un caracter de operación sea + - * ó / y presione enter
  * 
  */
 
