@@ -12,13 +12,13 @@
 float CALCULADORA_6(char *host, float a, float b, char op) {
 	CLIENT *clnt;
 	float  *result_1;
-	values  add_6_arg;
+	valores  add_6_arg;
 	float  *result_2;
-	values  sub_6_arg;
+	valores  sub_6_arg;
 	float  *result_3;
-	values  mul_6_arg;
+	valores  mul_6_arg;
 	float  *result_4;
-	values  div_6_arg;
+	valores  div_6_arg;
 
 	if(op=='+') {
 
