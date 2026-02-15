@@ -9,7 +9,7 @@
 #include "IDL.h"
 #include <stdio.h>
 
-float *add_6_svc(values *argp, struct svc_req *rqstp)
+float *add_6_svc(valores *argp, struct svc_req *rqstp)
 {
 
 	static float  result;
@@ -19,7 +19,7 @@ float *add_6_svc(values *argp, struct svc_req *rqstp)
 	return &result;
 }
 
-float *sub_6_svc(values *argp, struct svc_req *rqstp)
+float *sub_6_svc(valores *argp, struct svc_req *rqstp)
 {
 
 	static float  result;
@@ -29,7 +29,7 @@ float *sub_6_svc(values *argp, struct svc_req *rqstp)
 	return &result;
 }
 
-float *mul_6_svc(values *argp, struct svc_req *rqstp)
+float *mul_6_svc(valores *argp, struct svc_req *rqstp)
 {
 
 	static float  result;
@@ -39,7 +39,7 @@ float *mul_6_svc(values *argp, struct svc_req *rqstp)
 	return &result;
 }
 
-float * div_6_svc(values *argp, struct svc_req *rqstp)
+float * div_6_svc(valores *argp, struct svc_req *rqstp)
 {
 	static float  result;
 
